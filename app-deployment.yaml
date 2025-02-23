@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: task1-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: task1-app
+  template:
+    metadata:
+      labels:
+        app: task1-app
+    spec:
+      containers:
+      - name: task1-app
+        image: task1-backend:latest  
+        imagePullPolicy: Never     
+        ports:
+        - containerPort: 8080
+        env:
+        - name: SPRING_DATA_MONGODB_URI
+          value: "mongodb://mongodb-service:27017/taskdb"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: task1-service
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    targetPort: 8080
+    nodePort: 30080
+  selector:
+    app: task1-app
