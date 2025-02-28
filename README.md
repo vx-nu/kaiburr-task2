@@ -73,10 +73,14 @@ The REST API provides the following endpoints:
 All screenshots demonstrate the Kubernetes setup and API functionality, including my name ("Vishnuus") and the current date/time for verification. They are stored in the `screenshots` folder and linked below:
 Deploy MongoDB and Task API
 - ![alt text](<screenshots/mongo_db_deployement.png>)
-- ![Kubernetes Pods](screenshots/kubectl-pods.png)
-- ![Kubernetes Services](screenshots/kubectl-services.png)
-- ![Postman Test on Kubernetes - Execute Task](screenshots/postman-k8s-execute.png)
-- ![MongoDB Tasks](screenshots/tasks-k8s.png)
+- ![alt text](<screenshots/task-api-deployment.png>)
+Kubernetes Pods
+- ![alt text](<screenshots/kubectl get PODS.png>)
+Kubernetes Services
+- ![alt text](<screenshots/kubectl get services.png>)
+Curl Test on Kubernetes
+- ![alt text](<screenshots/getting output using Curl.png>)
+
 
 ## Notes
 - The application uses Spring Boot 3.4.3, Java 17, MongoDB, and Kubernetes client 19.0.0.
