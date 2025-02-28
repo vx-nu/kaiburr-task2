@@ -71,7 +71,8 @@ The REST API provides the following endpoints:
 
 ## Screenshots
 All screenshots demonstrate the Kubernetes setup and API functionality, including my name ("Vishnuus") and the current date/time for verification. They are stored in the `screenshots` folder and linked below:
-- ![Deploy MongoDB and Task API](screenshots/kubectl-apply.png)
+Deploy MongoDB and Task API
+- ![alt text](<screenshots/fetching id values before the values given(will give error).png>)
 - ![Kubernetes Pods](screenshots/kubectl-pods.png)
 - ![Kubernetes Services](screenshots/kubectl-services.png)
 - ![Postman Test on Kubernetes - Execute Task](screenshots/postman-k8s-execute.png)
