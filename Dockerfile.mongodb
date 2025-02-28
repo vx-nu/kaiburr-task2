@@ -1,0 +1,10 @@
+# Use official MongoDB image
+FROM mongo:6.0
+
+
+# Expose MongoDB default port
+EXPOSE 27017
+
+# Optional: Set up any MongoDB configuration if needed
+# (e.g., volume mounts for data persistence)
+# VOLUME ["/data/db"]
