@@ -70,9 +70,12 @@ The REST API provides the following endpoints:
 - Executes the task’s shell command in a Kubernetes pod using `busybox`, storing the execution details in `taskExecutions`.
 
 ## Screenshots
-The following screenshots demonstrate the application’s deployment and functionality:
-- **Pods List:** Shows `kubectl get pods` output with `mongodb-`, `task1-app-`, and `task-exec-` pods.
-- **API Test:** Shows a successful `PUT /tasks/execute?id=123` response with my name (`Vxnu`) and the current date/time visible.
+All screenshots demonstrate the Kubernetes setup and API functionality, including my name ("Vishnuus") and the current date/time for verification. They are stored in the `screenshots` folder and linked below:
+- ![Deploy MongoDB and Task API](screenshots/kubectl-apply.png)
+- ![Kubernetes Pods](screenshots/kubectl-pods.png)
+- ![Kubernetes Services](screenshots/kubectl-services.png)
+- ![Postman Test on Kubernetes - Execute Task](screenshots/postman-k8s-execute.png)
+- ![MongoDB Tasks](screenshots/tasks-k8s.png)
 
 ## Notes
 - The application uses Spring Boot 3.4.3, Java 17, MongoDB, and Kubernetes client 19.0.0.
